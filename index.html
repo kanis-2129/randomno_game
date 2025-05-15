@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..
+700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1
+,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gabarito:wght@400..900&
+family=Ms+Madi&family=Tagesschrift&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Guess the Number from 1 to 5</h1>
+
+        <div class="process">
+            <div class="input-btn">
+                <input placeholder="Enter any number" id="input">
+                <button id="button" onclick="checktheNumber()">Check</button>
+            </div>
+
+            <p id="result">You are Right or Wrong</p>
+            <p id="guessCount">Available Guesses : 3</p>
+        </div>
+    </div>
+
+
+    <script src="script.js">
+    </script>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            background-image: url('./images/img.jpeg');
+            background-size: cover;
+            background-position: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .container {
+            color: white;
+            margin-top: 100px;
+            margin: 140px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 50px;
+            padding: 30px;
+        }
+
+        .process {
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .process p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #input {
+            width: 40%;
+            height: 38px;
+            padding: 10px;
+            outline: none;
+            font-size: 20px;
+        }
+
+        #button {
+            height: 60px;
+            width: 100px;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .input-btn{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            justify-content: center;
+        }
